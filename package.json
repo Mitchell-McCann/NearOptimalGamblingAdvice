@@ -1,0 +1,15 @@
+{
+  "name"         : "texas-holdem-simulator",
+  "version"      : "0.0.0",
+  "description"  : "Texas HoldEm Simulator",
+  "main"         : "server.js",
+  "author"       : "Matt Morgis",
+  "dependencies" : {
+    "express"         : "~4.7.2",
+    "morgan"	        : "~1.2.2",
+    "poker-evaluator" : "~0.3.1",
+    "texas"           : "~0.2.1",
+	  "body-parser"     : "~1.5.2",
+	  "method-override" : "~2.1.2"
+    }
+}
