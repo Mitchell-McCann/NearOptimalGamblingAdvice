@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 384.6 169.6" enable-background="new 0 0 384.6 169.6" xml:space="preserve">
+<g>
+	<g>
+		<g>
+			<radialGradient id="SVGID_1_" cx="192.3068" cy="84.8068" r="147.1033" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#FF931E"/>
+				<stop  offset="0" style="stop-color:#15FF4B"/>
+				<stop  offset="0" style="stop-color:#00FF53;stop-opacity:0.7"/>
+				<stop  offset="1.640856e-003" style="stop-color:#00FF53;stop-opacity:0.7005"/>
+				<stop  offset="0.1983" style="stop-color:#00DB38;stop-opacity:0.7595"/>
+				<stop  offset="0.3966" style="stop-color:#00C022;stop-opacity:0.819"/>
+				<stop  offset="0.5961" style="stop-color:#00AC13;stop-opacity:0.8788"/>
+				<stop  offset="0.7966" style="stop-color:#00A00A;stop-opacity:0.939"/>
+				<stop  offset="1" style="stop-color:#009C07"/>
+			</radialGradient>
+			<ellipse fill="url(#SVGID_1_)" cx="192.3" cy="84.8" rx="190.7" ry="83.2"/>
+			<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="1.125" y1="84.8068" x2="383.4886" y2="84.8068">
+				<stop  offset="0" style="stop-color:#FF931E"/>
+				<stop  offset="0" style="stop-color:#15FF4B"/>
+				<stop  offset="7.533157e-002" style="stop-color:#12F441"/>
+				<stop  offset="0.3035" style="stop-color:#0AD928"/>
+				<stop  offset="0.5337" style="stop-color:#04C516"/>
+				<stop  offset="0.7652" style="stop-color:#01B90B"/>
+				<stop  offset="1" style="stop-color:#00B507"/>
+			</linearGradient>
+			<ellipse opacity="0.2" fill="none" stroke="url(#SVGID_2_)" stroke-miterlimit="1" cx="192.3" cy="84.8" rx="190.7" ry="83.2"/>
+			
+				<ellipse fill="none" stroke="#534741" stroke-width="3.25" stroke-linecap="round" stroke-linejoin="round" cx="192.3" cy="84.8" rx="190.7" ry="83.2"/>
+		</g>
+	</g>
+</g>
+</svg>
