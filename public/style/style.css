@@ -1,0 +1,264 @@
+body {
+    font-family: Georgia, serif;
+    background-color: #000;
+}
+
+/* the main header */
+#mainHeader {
+    position: relative;
+    width: 1000px;
+    height: 80px;
+
+    margin:auto;
+    border-radius: 15px;
+}
+
+#mainHeader h1 {
+    padding: 20px;
+    font-size: 18px;
+    color: #ce8483;
+}
+#mainHeader p {
+    padding-left: 20px;
+    font-size: 15px;
+    color: #ce8483;
+}
+
+
+#userScore, #computerScore {
+    font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+}
+
+/* start game button */
+#startButton {
+    position: absolute;
+    left: 800px;
+    top: 20px;
+    color: grey;
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+#startButton:hover {
+    color: black;
+    background-color: #dca7a7;
+}
+
+/* the Div container for the table img */
+#tableDiv {
+    margin: auto;
+    width: 800px;
+    margin-top: 125px;
+    position: relative;
+}
+
+#mainTable {
+    z-index: 1;
+}
+
+/* the div contain the 5 poker cards on the table */
+
+#fiveCards {
+    z-index: 2;
+    display: inline;
+    position: absolute;
+    top: 125px;
+    left: 200px;
+}
+
+/* the class for the 5 cards */
+.cards {
+    display: inline-block;
+}
+/* =======ANIMATION PART DEALING CARDS=============== */
+/* the animation of dealing the cards */
+#cardsDealingComputer, #cardsDealingUser {
+    position: absolute;
+    top: 130px;
+    left: 620px;
+}
+
+#GFX01 {
+    transform:rotate(120deg);
+    -webkit-transform:rotate(120deg);
+    position: absolute;
+    left: 80px;
+    top: 0px;
+    transition: all 0.5s ease-in;
+}
+#GFX01.effect01 {
+    transform:rotate(500deg);
+    -webkit-transform:rotate(500deg);
+    top: -100px;
+    left: -220px;
+}
+
+
+
+#GFX02 {
+    transform:rotate(120deg);
+    -webkit-transform:rotate(120deg);
+    position: absolute;
+    left: 40px;
+    top: 0px;
+    transition: all 0.7s ease-in;
+}
+#GFX02.effect02 {
+    transform:rotate(450deg);
+    -webkit-transform:rotate(450deg);
+    top: -100px;
+    left: -270px;
+}
+
+
+
+#GFX03 {
+    transform:rotate(70deg);
+    -webkit-transform:rotate(70deg);
+    position: absolute;
+    left: 80px;
+    top: 0px;
+    transition: all 0.5s ease-in;
+}
+#GFX03.effect03 {
+    transform:rotate(500deg);
+    -webkit-transform:rotate(500deg);
+    top: 100px;
+    left: -270px;
+}
+
+#GFX04 {
+    transform:rotate(70deg);
+    -webkit-transform:rotate(70deg);
+    position: absolute;
+    left: 40px;
+    top: 0px;
+    transition: all 0.7s ease-in;
+}
+#GFX04.effect04 {
+    transform:rotate(450deg);
+    -webkit-transform:rotate(450deg);
+    top: 100px;
+    left: -270px;
+}
+
+
+
+/* ===================END OF ANIMATION================= */
+
+
+/* computer hand */
+#computerHand {
+    z-index: 2;
+    position: absolute;
+    left: 315px;
+    top: -50px;
+}
+
+#computerCard01, #computerCard02 {
+    visibility: visible;
+    z-index: 4;
+}
+/* computer block cards from the user */
+#blockCards {
+    z-index: 3;
+    position: absolute;
+    top: 0px;
+}
+
+
+/* user hand */
+#userHand {
+    z-index: 2;
+    position: absolute;
+    left: 315px;
+    top: 300px;
+}
+#nameUser p {
+    color: #f5f5f5;
+    font-size: 15px;
+    margin-top: 10px;
+    border-radius: 30px;
+    position: absolute;
+    left: 375px;
+    top: 400px;
+}
+
+#nameComputer p {
+    color: #f5f5f5;
+    font-size: 15px;
+    margin-top: 10px;
+    border-radius: 30px;
+    position: absolute;
+    left: 355px;
+    top: 50px;
+}
+
+/* user action button option */
+#userAction01 {
+    position: absolute;
+    top: 450px;
+    left: 245px;
+
+}
+
+#userAction02, #userAction03, #userAction04 {
+    position: absolute;
+    top: 450px;
+    left: 170px;
+}
+
+.userButton {
+    -moz-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+    box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+    background-color:#79bbff;
+    -webkit-border-top-left-radius:15px;
+    -moz-border-radius-topleft:15px;
+    border-top-left-radius:15px;
+    -webkit-border-top-right-radius:15px;
+    -moz-border-radius-topright:15px;
+    border-top-right-radius:15px;
+    -webkit-border-bottom-right-radius:15px;
+    -moz-border-radius-bottomright:15px;
+    border-bottom-right-radius:15px;
+    -webkit-border-bottom-left-radius:15px;
+    -moz-border-radius-bottomleft:15px;
+    border-bottom-left-radius:15px;
+    text-indent:0;
+    border:1px solid #84bbf3;
+    display:inline-block;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    font-style:normal;
+    height:65px;
+    line-height:65px;
+    width:131px;
+    text-decoration:none;
+    text-align:center;
+    text-shadow:1px 1px 0px #528ecc;
+    margin: 5px;
+}
+.userButton:hover {
+     background-color: #843534;
+     border-color: #843534;
+     text-decoration:none;
+    color: white;
+ }
+.userButton:active {
+      position:relative;
+      top:1px;
+      text-decoration:none;
+}
+
+/* YOU LOST TITLE
+#youFold {
+    position: absolute;
+    left: 325px;
+    top: 60px;
+    color: #a94442;
+    z-index: 5;
+}*/

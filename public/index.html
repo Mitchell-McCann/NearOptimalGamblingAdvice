@@ -1,5 +1,116 @@
+<!DOCTYPE html>
 <html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<h1> Hello world </h1>
+    <title>Texas Holdem Poker Version 1.0</title>
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="style/style.css">
 
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <script type="text/javascript" src="js/computer.js"></script>
+    <script type="text/javascript" src="js/user.js"></script>
+    <script type="text/javascript" src="js/calcWin.js"></script>
+    <script type="text/javascript" src="js/mainScript.js"></script>
+
+</head>
+<body>
+<div id="wraper">
+    <div id="mainHeader">
+        <h1>Texas Holdem Poker App Version 1.0</h1>
+        <p>User Score: <span id="userScore">0</span> </p>
+        <p>Computer Score: <span id="computerScore">0</span></p>
+        <p>Current Hand: <span id="currentHand"></span> </p>
+        <p>Status: <span id="status" style="color: #ffff00"></span> </p>
+        <input type="button" value="Start A New Game" id="startButton" onclick="mixedTheDeck()">
+    </div>
+
+
+
+   <div id="tableDiv">
+       <img src="img/table01.svg" id="mainTable">
+
+       <div id="fiveCards">
+           <div id="slot01" class="cards">
+               <img id="slot01img" src="">
+           </div>
+           <div id="slot01" class="cards">
+               <img id="slot02img" src="">
+           </div>
+           <div id="slot01" class="cards">
+               <img id="slot03img" src="">
+           </div>
+           <div id="slot01" class="cards">
+               <img id="slot04img" src="">
+           </div>
+           <div id="slot01" class="cards">
+               <img id="slot05img" src="">
+           </div>
+        </div>
+
+
+       <div id="computerHand">
+           <!-- the cards that not allow the user see what the computer have -->
+           <div id="blockCards">
+               <img src="" id="block01">
+               <img src="" id="block02">
+           </div>
+           <!-- the actual cards the computer have -->
+           <div id="realCards">
+               <img src="" id="computerCard01">
+               <img src="" id="computerCard02">
+           </div>
+       </div>
+       <div id="nameComputer"><p></p></div>
+
+
+
+       <div id="userHand">
+           <img src="" id="userCard01">
+           <img src="" id="userCard02">
+       </div>
+       <div id="nameUser"><p></p></div>
+
+       <!-- dealing cards in the start, just animation -->
+       <div id="cardsDealingComputer">
+           <img src="img/cards/b1fv.png" id="GFX01">
+           <img src="img/cards/b1fv.png" id="GFX02">
+       </div>
+       <div id="cardsDealingUser">
+           <img src="img/cards/b1fv.png" id="GFX03">
+           <img src="img/cards/b1fv.png" id="GFX04">
+       </div>
+
+       <!-- user action option -->
+       <div id="userAction01">
+           <a href="#" class="userButton" onclick="userCheck01()">Check</a>
+           <a href="#" class="userButton" onclick="userFold()">Fold</a>
+       </div>
+       <div id="userAction02">
+           <a href="#" class="userButton" onclick="userCheck02()">Check</a>
+           <a href="#" class="userButton" onclick="">Raise</a>
+           <a href="#" class="userButton" onclick="userFold()">Fold</a>
+       </div>
+       <div id="userAction03">
+           <a href="#" class="userButton" onclick="userCheck03()">Check</a>
+           <a href="#" class="userButton" onclick="">Raise</a>
+           <a href="#" class="userButton" onclick="userFold()">Fold</a>
+       </div>
+       <div id="userAction04">
+           <a href="#" class="userButton" onclick="userCheck04()">Check</a>
+           <a href="#" class="userButton" onclick="">Raise</a>
+           <a href="#" class="userButton" onclick="userFold()">Fold</a>
+       </div>
+
+
+
+
+   </div>
+</div>
+</body>
 </html>
